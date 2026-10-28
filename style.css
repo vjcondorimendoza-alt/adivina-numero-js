@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(#0b0f1c, #000000);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #e0e0ff;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 30px 40px, white, transparent),
+    radial-gradient(1px 1px at 120px 90px, white, transparent),
+    radial-gradient(2px 2px at 200px 30px, #ffd700, transparent),
+    radial-gradient(1px 1px at 280px 120px, white, transparent),
+    radial-gradient(2px 2px at 350px 60px, white, transparent),
+    radial-gradient(1px 1px at 60px 140px, #aab8ff, transparent),
+    radial-gradient(2px 2px at 250px 150px, white, transparent);
+  background-size: 400px 180px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+.tarjeta {
+  position: relative;
+  z-index: 1;
+  background: rgba(18, 22, 42, 0.95);
+  border: 3px solid #4a6cf7;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(74, 108, 247, 0.6);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+h1 {
+  color: #ffd700;
+  margin-bottom: 12px;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+}
+
+p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+#pista {
+  color: #9aa5d1;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  border: 2px solid #3a4a8a;
+  border-radius: 8px;
+  background: #0d1226;
+  color: white;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: #3a56d4;
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(74, 108, 247, 0.8);
+}
+
+button:disabled {
+  background: #2a3550;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+#mensaje {
+  font-weight: bold;
+  margin: 15px 0;
+  min-height: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+li {
+  background: #1a2340;
+  padding: 6px;
+  margin: 4px 0;
+  border-radius: 5px;
+  border-left: 3px solid #4a6cf7;
+}
+
+#btnReiniciar {
+  background: #e74c3c;
+}
+
+#btnReiniciar:hover {
+  background: #c0392b;
+  box-shadow: 0 0 18px rgba(231, 76, 60, 0.7);
+}
+
+@media (max-width: 480px) {
+  .tarjeta {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}

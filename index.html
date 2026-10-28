@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misión: Descifra el Código</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="luna"></div>
+    <div class="tarjeta" id="tarjeta">
+    <h1> Misión Espacial</h1>
+    <p id="bienvenida">Escondí un código secreto del 1 al 100 en las estrellas. ¿Cuál es?</p>
+    <p id="pista">Astronauta , escribe tu primer número.</p>
+    <input type="number" id="inputNumero" placeholder="Ingresa un número" min="1" max="100">
+    <button id="btnVerificar">Transmitir</button>
+    <p id="mensaje"></p>
+    <h3> Señales enviadas: <span id="contador">0</span></h3>
+    <ul id="historial"></ul>
+    <button id="btnReiniciar">Nueva misión</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
